@@ -1,0 +1,9 @@
+* {
+    margin: 0; /*Aqui estou definindo o tamanho da margem dos textos em h1*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none; /*Aqui estou removendo os pontos das listas*/
+}
