@@ -1,10 +1,10 @@
 body {
     font-family: "Oxanium", cursive; 
-    background-color: #000;             /*Definindo cor do fundo da tag body*/
-    color: #fff ;                       /*Definindo a cor padrão dos textos dentro da tag body*/
+    background-color: #000;   /*Definindo cor do fundo da tag body*/
+    color: #fff ;  /*Definindo a cor padrão dos textos dentro da tag body*/
 }
 
-body:before{          /**/
+body:before{          /*Criando um fundo para a tela*/
     content: "batata";
     background-image: url(../img/bg-desktop.jpg);
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body:before{          /**/
 
 .cabecalho {
     display: flex; 
-    justify-content: center;              /*Junto com o recurso display, esses elementos centralizam o título X-MEN no topo da página"*/
+    justify-content: center;  /*Junto com o recurso display, esses elementos centralizam o título X-MEN no topo da página"*/
 }
 
 .selecao-de-personagens {
@@ -28,14 +28,14 @@ body:before{          /**/
     align-items: center;  /*alinhamento dos objetos verticalmente*/
     gap: 30px;  /*Distanciamento entre as sections*/
     min-height: calc(100vh - 152px); /*01:24*/
-    justify-content: center;
+    justify-content: center; /*Para mantenho as sections centralizadaas*/
 }
 
 .selecao-de-personagens .lista-de-personagens {   /*Faço uso de dois termos aqui para especificar que quero a tag de class lista-de-personagens que está dentro da tag selecao-de-personagens*/
     display: flex;  /*O flex faz que os elementos da lista fiquem lado a lado*/
     flex-wrap: wrap;
     gap: 30px;  /*Aqui estou criando uma margem de separação entre os elementos da lista*/
-    justify-content: center;  /*Mantem os cards centralizado*/
+    justify-content: center;  /*Mantenho os cards centralizados*/
 }
 
 .selecao-de-personagens .personagens {
@@ -46,41 +46,41 @@ body:before{          /**/
     gap: 25px;
 }
 
-.selecao-de-personagens .personagens .titulo {     /*Novamente definindo classes pais e filhos*/
-    font-size: 20px; /*Tamanho da letra*/
-    letter-spacing: 4px; /*espaçamento entre letras*/
-    text-transform: uppercase; /*Definindo-as como maiuscula*/
-    border-bottom: 2px solid #47f4ff; /*Definindo uma borda e sua cor*/
-    width: 100%; /*Definindo comprimento do título para que a borda o preencha*/
-    text-align: center; /*Alinhamento de texto*/
+.selecao-de-personagens .personagens .titulo { /*Novamente definindo classes pais e filhos para selecionar títulos específicos*/
+    font-size: 20px; /*Definindo o tamanho das letras do título*/
+    letter-spacing: 4px; /*Definindo o espaçamento entra as letras do título*/
+    text-transform: uppercase; /*Definindo as do título letras como maiúsculas*/
+    border-bottom: 2px solid #47f4ff; /*Definindo uma borda abaíxo do título bem como sua cor*/
+    width: 100%; /*Definindo comprimento do título para que a borda preencha toda a largura dele.*/
+    text-align: center; /*Alinhamento de texto no centro*/
 }
 
-.lista-de-personagens .personagem img {
-    width: 100%; /*Definindo o tamanho dos cards.*/
+.lista-de-personagens .personagem img {  /*Definindo o tamanho dos cards para que eles não se alterem com a diminuição ou aumento das janelas*/
+    width: 100%; 
     height: 100%;
 }
 
-.lista-de-personagens .personagem.selecionado{
-    box-shadow: 0px 0px 24px 5px #0271f7;
+.lista-de-personagens .personagem.selecionado{  /*Definindo cor e características da sombra ao selecionar um dos cards*/
+    box-shadow: 0px 0px 24px 5px #0271f7;   
 }
 
-.personagem-selecionado {
-    text-align: center; /*Alinhamento do texto*/
+.personagem-selecionado {  /*Alinhamento e altura máxima do texto com informações dos personagens selecionados*/
+    text-align: center; 
     max-height: 530px;
 }
 
-.personagem-selecionado .personagem-grande{
+.personagem-selecionado .personagem-grande{  /**/
     width: 430px;
     height: 430 px;
 }
 
-.personagem-selecionado .nome-personagem{
+.personagem-selecionado .nome-personagem{  /**/
     border-bottom: 2px solid #47f4ff ;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 
-.personagem-selecionado .descricao-personagem {
+.personagem-selecionado .descricao-personagem {  /**/
     font-size: 16px;
     line-height: 22px;
     text-align: center;

@@ -1,8 +1,42 @@
 /*PARA DEFINIR AS REGRAS DE CSS É INTERESSANTE DIMINUR A TELA DA APLICAÇÃO  E VER QUANDO ELA PASSA A MUDAR*/
 
-@media (max-width: 1120px) {  /*Aqui defino uma régua e consequência para ela*/
+@media (max-width: 1120px) {  /*Aqui defino uma regra e consequência para ela*/
+ 
     .cabecalho .logo {
-        max-width: 190;
+        max-width: 190; /*Diminuindo o cabeçalho ao chegar em 1120*/
+    }
+
+    .selecao-de-personagens {
+        flex-direction: column-reverse; /*Permite que as sections agora fiquem uma embaixo da outra de forma invertida. */
+        max-width: 430px;  
+        margin: 0 auto; /*Centralizando os elementos */
+    }
+
+    .selecao-de-personagens .personagens {
+        margin-top: 37px; /*Distanciamento entre as sections*/
+    }
+
+    .selecao-de-personagens .personagens .titulo {
+        font-size: 15px;   /*Tamanho da fonte do título "Selecione um personagem"*/
+    }
+
+    .selecao-de-personagens .lista-de-personagens {
+        gap: 9px; /*Espaçamento entre os cards*/
+    }
+
+    .selecao-de-personagens .personagem img {
+        width: 80px; /*Definindo um tamanho para os cards*/
+    }
+
+    .personagem-selecionado .personagem-grande {
+        width: 350px;  /*Definindo tamanho da figura grande.*/
+        height: 350px;
+    }
+
+    .personagem-selecionado .descricao-personagem {
+        width: 82%; /*Definindo características do texto de descrição dos personagens*/
+        font-size: 16px;
+        margin: 20px auto;
     }
 
 }
