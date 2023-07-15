@@ -1,0 +1,9 @@
+/*PARA DEFINIR AS REGRAS DE CSS É INTERESSANTE DIMINUR A TELA DA APLICAÇÃO  E VER QUANDO ELA PASSA A MUDAR*/
+
+@media (max-width: 1120px) {  /*Aqui defino uma régua e consequência para ela*/
+    .cabecalho .logo {
+        max-width: 190;
+    }
+
+}
+
